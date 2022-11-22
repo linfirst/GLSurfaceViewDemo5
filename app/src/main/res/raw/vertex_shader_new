@@ -1,0 +1,7 @@
+attribute vec4 vPosition;     //顶点坐标
+attribute vec4 textureCoordinate;      //纹理坐标
+varying vec2 transferValue;       // 传递纹理坐标
+void main() {
+    gl_Position = vPosition;
+    transferValue = textureCoordinate.xy;
+}
